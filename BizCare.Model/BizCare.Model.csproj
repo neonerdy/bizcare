@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3166AB82-C4A4-4707-B70A-6C75627D0155}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizCare.Model</RootNamespace>
+    <AssemblyName>BizCare.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditTrail.cs" />
+    <Compile Include="BillReceipt.cs" />
+    <Compile Include="BillReceiptItem.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="PayableBalanceItem.cs" />
+    <Compile Include="ProfitStatement.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DebtBalance.cs" />
+    <Compile Include="DebtPayment.cs" />
+    <Compile Include="DebtPaymentItem.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="ExpenseItem.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="PayableBalance.cs" />
+    <Compile Include="PayablePayment.cs" />
+    <Compile Include="PayablePaymentItem.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductQty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs" />
+    <Compile Include="PurchaseItem.cs" />
+    <Compile Include="RecordCounter.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="SaleItem.cs" />
+    <Compile Include="Sales.cs" />
+    <Compile Include="SalesItem.cs" />
+    <Compile Include="Salesman.cs" />
+    <Compile Include="SalesmanFee.cs" />
+    <Compile Include="StockCorrection.cs" />
+    <Compile Include="StockCorrectionItem.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="UserAccess.cs" />
+    <Compile Include="UserLogin.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

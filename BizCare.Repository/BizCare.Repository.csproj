@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FAECF46C-2870-46AC-9EE7-B33E35502B18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizCare.Repository</RootNamespace>
+    <AssemblyName>BizCare.Repository</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityMap, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EntityMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillReceiptItemRepository.cs" />
+    <Compile Include="BillReceiptRepository.cs" />
+    <Compile Include="CategoryRepository.cs" />
+    <Compile Include="CompanyRepository.cs" />
+    <Compile Include="Mapping\UserAccessMapper.cs" />
+    <Compile Include="PayableBalanceItemRepository.cs" />
+    <Compile Include="Mapping\PayableBalanceItemMapper.cs" />
+    <Compile Include="ProfitStatementRepository.cs" />
+    <Compile Include="CustomerRepository.cs" />
+    <Compile Include="DebtBalanceRepository.cs" />
+    <Compile Include="DebtPaymentItemRepository.cs" />
+    <Compile Include="DebtPaymentRepository.cs" />
+    <Compile Include="EmployeeRepository.cs" />
+    <Compile Include="ExpenseItemRepository.cs" />
+    <Compile Include="ExpenseRepository.cs" />
+    <Compile Include="InventoryRepository.cs" />
+    <Compile Include="Mapping\BillReceiptItemMapper.cs" />
+    <Compile Include="Mapping\BillReceiptMapper.cs" />
+    <Compile Include="Mapping\CategoryMapper.cs" />
+    <Compile Include="Mapping\CompanyMapper.cs" />
+    <Compile Include="Mapping\ProfitStatementMapper.cs" />
+    <Compile Include="Mapping\CustomerMapper.cs" />
+    <Compile Include="Mapping\DebtBalanceMapper.cs" />
+    <Compile Include="Mapping\DebtPaymentItemMapper.cs" />
+    <Compile Include="Mapping\DebtPaymentMapper.cs" />
+    <Compile Include="Mapping\EmployeeMapper.cs" />
+    <Compile Include="Mapping\ExpenseItemMapper.cs" />
+    <Compile Include="Mapping\ExpenseMapper.cs" />
+    <Compile Include="Mapping\IDataMapper.cs" />
+    <Compile Include="Mapping\InventoryMapper.cs" />
+    <Compile Include="Mapping\Mapper.cs" />
+    <Compile Include="Mapping\PayableBalanceMapper.cs" />
+    <Compile Include="Mapping\PayablePaymentItemMapper.cs" />
+    <Compile Include="Mapping\PayablePaymentMapper.cs" />
+    <Compile Include="Mapping\ProductMapper.cs" />
+    <Compile Include="Mapping\ProductQtyMapper.cs" />
+    <Compile Include="PayableBalanceRepository.cs" />
+    <Compile Include="PayablePaymentItemRepository.cs" />
+    <Compile Include="PayablePaymentRepository.cs" />
+    <Compile Include="ProductQtyRepository.cs" />
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mapping\PurchaseItemMapper.cs" />
+    <Compile Include="Mapping\PurchaseMapper.cs" />
+    <Compile Include="Mapping\RecordCounterMapper.cs" />
+    <Compile Include="Mapping\SalesItemMapper.cs" />
+    <Compile Include="Mapping\SalesmanFeeMapper.cs" />
+    <Compile Include="Mapping\SalesmanMapper.cs" />
+    <Compile Include="Mapping\SalesMapper.cs" />
+    <Compile Include="Mapping\StockCorrectionItemMapper.cs" />
+    <Compile Include="Mapping\StockCorrectionMapper.cs" />
+    <Compile Include="Mapping\SupplierMapper.cs" />
+    <Compile Include="Mapping\UserLoginMapper.cs" />
+    <Compile Include="PurchaseItemRepository.cs" />
+    <Compile Include="PurchaseRepository.cs" />
+    <Compile Include="RecordCounterRepository.cs" />
+    <Compile Include="ReportRepository.cs" />
+    <Compile Include="RepositoryRegistry.cs" />
+    <Compile Include="SalesItemRepository.cs" />
+    <Compile Include="SalesmanFeeRepository.cs" />
+    <Compile Include="SalesmanRepository.cs" />
+    <Compile Include="SalesRepository.cs" />
+    <Compile Include="StockCorrectionItemRepository.cs" />
+    <Compile Include="StockCorrectionRepository.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="SupplierRepository.cs" />
+    <Compile Include="UserAccessRepository.cs" />
+    <Compile Include="UserLoginRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BizCare.Model\BizCare.Model.csproj">
+      <Project>{3166AB82-C4A4-4707-B70A-6C75627D0155}</Project>
+      <Name>BizCare.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
